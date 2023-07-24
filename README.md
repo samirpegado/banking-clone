@@ -1,6 +1,6 @@
 # Bank Application with Kotlin and Jetpack Compose
 
-(https://github.com/samirpegado/banking-clone/blob/main/bankingclone.gif)
+![](https://github.com/samirpegado/banking-clone/blob/main/bankingclone.gif)
 
 This is a bank application project developed using the Kotlin language and the Jetpack Compose library. The main objective of this project was to apply fundamental concepts of Jetpack Compose, such as NavController, ViewModel, List, Grids, and LazyColumns, providing a rich and modern user experience.
 
