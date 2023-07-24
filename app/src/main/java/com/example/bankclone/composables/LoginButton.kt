@@ -30,7 +30,7 @@ fun LoginButton(
             text = symbol,
             fontSize = 38.sp,
             fontWeight = FontWeight.ExtraBold,
-            color = Color.Black
+            color = Color.White
         )
     }
 }

@@ -148,20 +148,20 @@ fun CloneMBWay() {
     ) {
         Row(
             modifier = Modifier
-                .background(Color(0xFF0094CC))
+                .background(Color(0xFFE7E7E7))
                 .fillMaxWidth()
                 .padding(vertical = 8.dp, horizontal = 16.dp)
         ) {
             Text(
-                text = "MB Way",
+                text = "MB Pay",
                 fontSize = 15.sp,
                 fontWeight = FontWeight.SemiBold,
-                color = Color.White
+                color = Color.Black
             )
         }
         Row(
             modifier = Modifier
-                .background(Color(0xFF01A6E6))
+                .background(Color(0xFF464646))
                 .fillMaxWidth()
                 .padding(horizontal = 40.dp, vertical = 22.dp),
             horizontalArrangement = Arrangement.SpaceEvenly,
@@ -177,7 +177,7 @@ fun CloneMBWay() {
                         onClick = { /*TODO*/ },
                         shape = CircleShape,
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = Color(0xFF0099D3)
+                            containerColor = Color(0xFF1A1A1A)
                         ),
                         modifier = Modifier
                             .size(64.dp)
@@ -207,17 +207,17 @@ fun CloneMBWay() {
 
 @Composable
 fun BankCloneWelcomeApp(
-    navController: NavController,
+    navController: NavController
 ) {
 
     var switchOn by remember {
-        mutableStateOf(true)
+        mutableStateOf(false)
     }
 
     Column (
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF01B9FF))
+            .background(Color(0xFF070707))
             .padding(horizontal = 6.dp)
 
     ) {
@@ -239,7 +239,7 @@ fun BankCloneWelcomeApp(
                 )
 
                 Text(
-                    text = if (switchOn) "Os seus saldos estarão visíveis" else "Os seus saldos serão omitidos",
+                    text = if (switchOn) "Os seus saldos serão omitido" else "Os seus saldos sestarão visíveis",
                     fontSize = 16.sp,
                     color = Color.White,
                 )
@@ -265,13 +265,13 @@ fun BankCloneWelcomeApp(
                     .fillMaxWidth()
                     .size(60.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = Color.White
+                    containerColor = Color(0xFFE7E7E7)
                 )
 
             ) {
                 Text(
                     text = "Login",
-                    color = Color(0xFFCD1B93),
+                    color = Color.Black,
                     fontSize = 22.sp,
                     )
             }

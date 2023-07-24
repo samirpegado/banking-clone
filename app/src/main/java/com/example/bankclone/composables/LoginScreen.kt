@@ -22,6 +22,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -45,7 +46,7 @@ fun BankLoginBar(navController: NavController) {
                 imageVector = Icons.Default.ArrowBack,
                 contentDescription = "ArrowBack",
                 modifier = Modifier.size(30.dp),
-                tint = Color.Black
+                tint = Color.White
             )
         }
     }    
@@ -66,12 +67,14 @@ fun BankLoginHeader(
         Text(
             text = "Introduza seu PIN",
             fontSize = 20.sp,
+            color = Color.White
         )
 
         Text(
             text = "•".repeat(state.number1.length),
             fontSize = 60.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            color = Color.White
         )
 
         if(state.number1.length == 4){
@@ -198,6 +201,7 @@ fun BankLoginKey(
                     modifier = Modifier
                         .fillMaxSize()
                         .scale(1f),
+                    colorFilter = ColorFilter.tint(Color.White)
                 )
             }
             LoginButton(
@@ -214,6 +218,7 @@ fun BankLoginKey(
                     modifier = Modifier
                         .fillMaxSize()
                         .scale(1f),
+                    colorFilter = ColorFilter.tint(Color.White)
                 )
             }
         }
@@ -255,7 +260,7 @@ fun LoginScreen(navController: NavController) {
 
     Column(modifier = Modifier
         .fillMaxSize()
-        .background(Color(0xFF01B9FF))
+        .background(Color(0xFF070707))
         .padding(horizontal = 6.dp)) {
 
         BankLoginBar(navController)

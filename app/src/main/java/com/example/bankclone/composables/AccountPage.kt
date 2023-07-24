@@ -72,7 +72,7 @@ fun AccountHeader() {
                 .padding(horizontal = 5.dp)
                 .clip(CircleShape)
                 .size(35.dp)
-                .background(Color(0xFF312B49))
+                .background(Color.Black)
 
             ){
                 Image(
@@ -86,7 +86,7 @@ fun AccountHeader() {
             Box(modifier = Modifier
                 .clip(CircleShape)
                 .height(35.dp)
-                .background(Color(0xFF312B49))){
+                .background(Color.Black)){
                 Image(
                     painter = painterResource(id = R.drawable.mbway),
                     contentDescription = "",
@@ -161,9 +161,7 @@ fun AccountBody() {
                     .height(175.dp)
                     .clip(shape = RoundedCornerShape(10.dp))
                     .background(
-                        brush = Brush.linearGradient(
-                            colors = listOf(Color(0xFF0A9DED), Color(0xFF614ACC))
-                        )
+                        color = Color(0xFF070707)
                     )
             ){
                 Column(
@@ -223,7 +221,7 @@ fun AccountBody() {
             .padding(horizontal = 5.dp)
             .clip(CircleShape)
             .size(10.dp)
-            .background(Color(0xFF009FFF))
+            .background(Color.Black)
         )
         Box(modifier = Modifier
             .padding(horizontal = 5.dp)
@@ -309,7 +307,7 @@ fun AccountFooter() {
         Row {
             for (footerIcon in iconSource.loadFooter){
                 var isClicked by remember { mutableStateOf(false) }
-                val color = if(isClicked) Color(0xFF3CC8EB) else Color.Gray
+                val color = if(isClicked) Color.Gray else Color.Black
                 
                 Column(modifier = Modifier
                     .width(78.dp)
@@ -381,7 +379,7 @@ fun AccountDetails() {
                         .padding(start = 30.dp, end = 10.dp)
                         .clip(CircleShape)
                         .size(35.dp)
-                        .background(Color(0xFFD5D8E7))
+                        .background(Color(0xFF3F3F3F))
                     )
                     Column(
                         modifier = Modifier
@@ -432,7 +430,7 @@ fun AccountPage(
                 .height(140.dp)
                 .background(
                     brush = Brush.linearGradient(
-                        colors = listOf(Color.Black, Color(0xFF1A1334))
+                        colors = listOf(Color(0xFF181818), Color(0xFF222222))
                     )
                 ),
         )

@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.bankclone.composables.AccountPage
 import com.example.bankclone.composables.BankCloneWelcomeApp
 import com.example.bankclone.composables.LoginScreen
+//import com.example.bankclone.composables.LoginScreen
 import com.example.bankclone.ui.theme.BankCloneTheme
 
 class MainActivity : ComponentActivity() {
